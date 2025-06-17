@@ -47,27 +47,12 @@ vagrant ssh
 # Acesse o site local
 http://localhost:8080
 
+# (Opcional) Reprovisione após alterações no playbook
+vagrant provision
+
 # Destrua a VM quando não for mais necessária
 vagrant destroy -f
 ```
-
----
-
-## ⚠️ Possíveis Erros no Windows
-
-Se você encontrar a mensagem:
-
-```
-VT-x is not available. (VERR_VMX_NO_VMX)
-```
-
-Execute no terminal como administrador:
-
-```bash
-bcdedit /set hypervisorlaunchtype off
-```
-
-Depois reinicie a máquina.
 
 ---
 
@@ -76,6 +61,3 @@ Depois reinicie a máquina.
 - [Documentação do Vagrant](https://developer.hashicorp.com/vagrant/docs)
 - [Documentação do Ansible](https://docs.ansible.com/)
 - [Documentação do VirtualBox](https://www.virtualbox.org/wiki/Documentation)
-
----
-
